@@ -18,6 +18,10 @@ html{
 *, *::before, *::after{
     box-sizing: inherit;
 }
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
 body{
     margin:0;
     padding:0;
@@ -51,6 +55,7 @@ body{
     align-items: center;
     padding: 4.5em 4.1rem 0 3.9rem;
     width: 100%;
+    display: none;
     
     &__logo{
         img{
@@ -265,5 +270,128 @@ body{
     display: flex;
     img{
         width: 100%;
+    }
+}
+footer{
+    margin: 0;
+    width: 100%;
+    background-color: hsl(167, 44%, 70%);
+}
+
+.footer__container{
+    padding: 7rem 0;
+    margin: 0 auto;
+    width: 21%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+    &__logo{
+        width: 100%;
+        text-align: center;
+        filter: invert(43%) sepia(13%) saturate(1537%) hue-rotate(116deg) brightness(88%) contrast(91%);
+        img{
+            width: 15.5rem;
+        }
+    }
+
+    &__links{
+        margin-top: 3rem;
+        display:flex;
+        justify-content: space-between;
+        font-family: 'Barlow', serif;
+        font-size: 1.65rem;
+        color: var(--dark-moderate-cyan);
+    }
+
+    &__social-links{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 8.2rem;
+        padding: 0 20%;
+
+        img{
+            width: 1.9rem;
+        }
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .presentation-cards-container{
+        :nth-child(1){
+            flex-direction: column-reverse;
+        }
+    }
+    .presentation-cards{
+        flex-direction: column;
+    }
+    .image-card{
+        width: 100%;
+        overflow: hidden;
+    }
+    .with-text{
+        display: flex;
+        align-items: center;
+        img{
+            min-width: 700px;
+        }
+    }
+    .info-card{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        aspect-ratio: 1;
+
+        &__title{
+            font-size: 2.9rem;
+        }
+
+        &__text-container{
+            margin: 0;
+            width: 85%;
+            text-align: center;
+        }
+
+        &__text{
+            margin-top: 5%;
+        }
+
+        &__learn-more{
+            margin-top: 10%;
+        }
+    }
+    .image-card__text-container{
+        top: 106vw;
+    }
+
+    .testimonials{
+        &__title{
+            font-size: 1.5rem;
+        }
+
+        &__container{
+            padding: 6rem 5%;
+        }
+    
+        &__cards-container{
+            margin-top: 0;
+            flex-direction: column;
+            align-items: center
+        }
+
+        &__card{
+            margin-top: 6em;
+            
+            width: 90%;
+
+            &__text{
+                margin-top: 2em;
+            }
+
+            &__name{
+                margin-top: 2em;
+            }
+        }
     }
 }
