@@ -85,6 +85,9 @@ body {
   border-radius: 100px;
   background-color: white;
 }
+.nav-bar .hamburger-menu-container {
+  display: none;
+}
 .nav-bar .hamburger-menu-container img {
   width: 2.1rem;
 }
@@ -94,7 +97,8 @@ body {
   position: fixed;
   top: 8rem;
   width: 80%;
-  left: 10%;
+  max-width: 300px;
+  right: 7.5%;
   background-color: white;
 }
 .mobile-menu__content-wrapper {
@@ -386,6 +390,9 @@ footer {
   }
   .nav-bar ul {
     display: none;
+  }
+  .nav-bar .hamburger-menu-container {
+    display: block;
   }
 
   .intro__text {

@@ -88,6 +88,7 @@ body{
         }
     }
     .hamburger-menu-container{
+        display: none;
         img{
             width: 2.1rem;
         }
@@ -99,7 +100,8 @@ body{
     position: fixed;
     top: 8rem;
     width: 80%;
-    left: 10%;
+    max-width: 300px;
+    right: 7.5%;
     background-color: white;
 
     &__content-wrapper{
@@ -406,8 +408,10 @@ footer{
         ul{
         display: none;
         }
+        .hamburger-menu-container{
+            display: block;
+        }
     }
-
     .intro__text{
         font-size: 3.5rem;
     }
