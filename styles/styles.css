@@ -337,7 +337,8 @@ body {
 .bottom-pictures-container__bottom-row {
   display: flex;
 }
-.bottom-pictures-container img {
+.bottom-pictures-container picture img {
+  display: block;
   width: 100%;
 }
 
@@ -394,24 +395,19 @@ footer {
   .nav-bar .hamburger-menu-container {
     display: block;
   }
-
   .intro__text {
     font-size: 3.5rem;
   }
-
   .presentation-cards-container :nth-child(1) {
     flex-direction: column-reverse;
   }
-
   .presentation-cards {
     flex-direction: column;
   }
-
   .image-card {
     width: 100%;
     overflow: hidden;
   }
-
   .with-text {
     display: flex;
     align-items: center;
@@ -419,7 +415,6 @@ footer {
   .with-text img {
     min-width: 700px;
   }
-
   .info-card {
     display: flex;
     justify-content: center;
@@ -440,11 +435,9 @@ footer {
   .info-card__learn-more {
     margin-top: 10%;
   }
-
   .image-card__text-container {
     top: 65%;
   }
-
   .testimonials__title {
     font-size: 1.5rem;
   }
@@ -466,7 +459,6 @@ footer {
   .testimonials__card__name {
     margin-top: 2em;
   }
-
   .bottom-pictures-container {
     flex-wrap: wrap;
   }

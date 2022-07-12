@@ -171,12 +171,24 @@
   <section class="bottom-pictures">
     <div class="bottom-pictures-container">
       <div class="bottom-pictures-container__top-row">
-        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bottles">
-        <img src="./images/desktop/image-gallery-orange.jpg" alt="Orange on a plate">
+        <picture>
+          <source media="(max-width: 800px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
+          <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bottles">
+        </picture>
+        <picture>
+          <source media="(max-width: 800px)" srcset="./images/mobile/image-gallery-orange.jpg">
+          <img src="./images/desktop/image-gallery-orange.jpg" alt="Orange on a plate">
+        </picture>
     </div>
       <div class="bottom-pictures-container__bottom-row">
-        <img src="./images/desktop/image-gallery-cone.jpg" alt="Ice cream Cone">
-        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar Cubes">
+        <picture>
+          <source media="(max-width: 800px)" srcset="./images/mobile/image-gallery-cone.jpg">
+          <img src="./images/desktop/image-gallery-cone.jpg" alt="Ice cream Cone">
+        </picture>
+        <picture>
+          <source media="(max-width: 800px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
+          <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar Cubes">
+        </picture>
       </div>
     </div>
   </section>

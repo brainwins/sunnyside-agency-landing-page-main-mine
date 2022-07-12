@@ -345,8 +345,8 @@ body{
      &__bottom-row{
         display: flex;
      }
-
-    img{
+    picture img{
+        display: block;
         width: 100%;
     }
 }
