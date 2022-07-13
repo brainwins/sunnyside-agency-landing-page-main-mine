@@ -43,7 +43,7 @@ body {
 .intro__text {
   display: block;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 9.7rem;
   color: white;
   font-family: "Fraunces", serif;
   font-size: 5.3rem;
@@ -59,7 +59,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4.5em 4.1rem 0 3.9rem;
+  padding: 3.5em 4.1rem 0 3.9rem;
   width: 100%;
 }
 .nav-bar__logo img {
